@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Finder 📚</title>
+<!-- React CDN -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- React Mount Point -->
+<div id="react-widget" class="mt-8"></div>
+<div id="theme-toggle" class="mt-6 flex justify-center"></div>
+
+    <!-- ✅ Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="text-center mt-10">
+      <h1 class="text-4xl font-bold tracking-wide">Book Finder 📖</h1>
+      <p class="text-gray-400 mt-2 text-lg">Discover your next favorite read instantly</p>
+    </header>
+
+    <!-- Search Section -->
+    <section class="flex flex-col sm:flex-row justify-center items-center gap-3 mt-10 w-full px-4">
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search your next favorite book..."
+        class="w-full sm:w-1/2 px-4 py-3 rounded-full bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-gray-400 transition-all"
+      />
+      <div class="flex gap-2 mt-3 sm:mt-0">
+        <button
+          id="searchBtn"
+          class="bg-white text-black font-semibold px-5 py-3 rounded-full hover:bg-gray-200 transition-all"
+        >
+          Search
+        </button>
+        <button
+          id="clearBtn"
+          class="bg-gray-700 text-white font-semibold px-5 py-3 rounded-full hover:bg-gray-600 transition-all"
+        >
+          Clear
+        </button>
+      </div>
+    </section>
+
+    <!-- Loader -->
+    <div id="loader" class="hidden flex justify-center mt-10">
+      <div class="w-10 h-10 border-4 border-gray-300 border-t-white rounded-full animate-spin"></div>
+    </div>
+
+    <!-- Search History -->
+    <section class="mt-10 text-center">
+      <h2 class="text-xl font-semibold mb-4">Recent Searches</h2>
+      <div id="history" class="flex flex-wrap gap-2 justify-center"></div>
+    </section>
+
+    <!-- Book Results -->
+    <section>
+      <div id="results" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 px-4 animate-fadeIn"></div>
+    </section>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
