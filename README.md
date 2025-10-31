@@ -1,16 +1,36 @@
-# React + Vite
+# 📚 Book Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and modern **Book Finder Web App** built using **React**, **Tailwind CSS**, and the **Google Books API**.  
+It allows users to search for books by title, author, or keyword, and displays detailed information like the cover, title, author, and preview link — all in a premium black theme.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+- 🔍 **Instant Book Search:** Fetches live results using the Google Books API.
+- 🖼️ **Book Covers & Details:** Displays author, publisher, and preview link.
+- ⚡ **Built with React + Tailwind CSS:** For a fast, responsive, and modern UI.
+- 🌙 **Premium Dark Theme:** Clean and elegant user experience.
+- 💬 **Interactive React Components:** Includes custom widgets and animations.
+- 🧠 **State Management:** Uses React hooks (`useState`, `useEffect`) for dynamic updates.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology | Purpose |
+|-------------|----------|
+| **React** | Component-based frontend framework |
+| **Tailwind CSS** | Utility-first CSS framework for styling |
+| **JavaScript (ES6)** | Logic and API handling |
+| **Google Books API** | Fetching book data |
+| **Vite** | Fast React bundler and dev server |
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Kishor2402/book-finder.git
+cd book-finder
